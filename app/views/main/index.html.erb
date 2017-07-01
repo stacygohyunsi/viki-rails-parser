@@ -1,0 +1,32 @@
+<table class="table table-danger">	
+	<thead>
+		<h2><%= pluralize(@duplicates.count, 'duplicate')%>:</h2>
+	</thead>
+	<tbody>
+			<% @duplicates.each do | show | %>
+				<tr>
+					<td>
+						<%= show %>
+					</td>
+				</tr>
+			<% end %>
+	</tbody>
+</table>
+
+<% @obj.each do |section, showContent| %>
+	<table class="table table-inverse">
+		<thead>
+			<h2><%= section %></h2>
+		</thead>
+		<tbody>
+			<tr>
+				<% showContent.each do | eachContent |%>
+					<tr>
+						<td>
+							<%= eachContent %>
+						</td>
+					</tr>
+				<% end %>	
+		</tbody>
+	</table>
+<% end %>
