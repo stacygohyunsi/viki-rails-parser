@@ -18,6 +18,7 @@ Although I only just started using Rails, I wanted to challenge myself with this
 2. `bundle install`
 2. Run "rails server"
 3. Go to localhost:3000
+4. It auto refreshes the page every 10 minutes, making it an awesome dashboard for the team populating the content on the homepage.
 
 Alternatively, to access an api endpoint you can go to localhost:3000/api
 

@@ -62,7 +62,6 @@ class MainController < ApplicationController
 					h[entry] = 1
 				end
 			end	
-			puts h	
 			return duplicates
 		end
 	
