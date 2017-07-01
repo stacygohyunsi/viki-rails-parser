@@ -1,3 +1,11 @@
+<script>
+	setTimeout(
+		function() { 
+			window.location.reload(true); 
+			}, 600000
+	);
+</script>
+
 <table class="table table-danger">	
 	<thead>
 		<h2><%= pluralize(@duplicates.count, 'duplicate')%>:</h2>
